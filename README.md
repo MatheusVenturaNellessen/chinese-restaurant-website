@@ -36,7 +36,7 @@
 					<li>No macOS ou Linux: Abra o <strong>Terminal</strong>.</li>
 				</ul>
 			<li>Navegue até o diretório onde deseja clonar o repositório com o comando <strong>cd</strong>.</li>
-			<li>No diretório escolhido digite o seguinte comando: <strong>git clone https://github.com/MatheusVenturaNellessen/cozinha-dmarie.git</strong>.</li>
+			<li>No diretório escolhido digite o seguinte comando: <strong>git clone https://github.com/MatheusVenturaNellessen/chinese-restaurant-website.git</strong>.</li>
 			<li>Acesse o repositório com o comando <strong>cd</strong>.</li>
 		</ol>
 	<li>Por fim, abra o arquivo index.html em algum navegador.</li>
@@ -50,4 +50,4 @@
 
 <h2>Contribuições</h2>
 
-<p>Se você deseja contribuir com este projeto, sinta-se à vontade para abrir issues para discutir melhorias!</p>
+<p>Se você deseja contribuir com este projeto, sinta-se à vontade para abrir <strong>issues</strong> para discutir melhorias!</p>
