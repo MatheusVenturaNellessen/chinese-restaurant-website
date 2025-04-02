@@ -1,53 +1,60 @@
 <h1>Panela de Bambu Website</h1>
-
-<p>Esse projeto teve como objetivo desenvolver um site de um restaurante chinês fim de praticar as seguintes linguagens.</p>
+<p>Este projeto de um site para o restaurante de culinária chinesa fictício Panela de Bambu foi desenvolvido apenas para fins de aprendizado, sem qualquer uso comercial. Em seu desenvolvimento foram utilizadas as limguagens HTML, CSS e JavaScript fim de explorar conceitos de desenvolvimento web, em especial o front-end.</p>
 
 <h2>Tecnologias utilizadas</h2>
-
 <ul>
-	<li>HTML5</li>
-	<li>CSS3</li>
-	<li>JavaScript</li>
-	<li>Visual Studio Code</li>
+	<li>HTML5.
+	<li>CSS3.
+	<li>JavaScript.
+	<li>Visual Studio Code.
 </ul>
+
+<h2>Estrutura das pastas</h2>
+<pre>panelachinese-restaurant-website/
+├── assets/
+│   ├── css/				# Arquivos de estilo
+│   │   └── style.css
+│   │
+│   ├── img/				# Imagens utilizadas no projeto
+│   │   └── (arquivos de imagem)
+│   │
+│   └── js/				# Scripits do site
+│     	└── main.js
+│
+└── index.html				# Página principal do projeto
+</pre>
 
 <h2>Funcionalidades</h2>
-
 <ul>
-  <li>Responsividade para dispositivos pequenos (celulares e tablets) e dispositivos maiores (laoptop e computadores).</li>
-  <li>Adicionar item a sacola de compras.</li>
-  <li>Visualizar itens da sacola e suas rescpetivas quantidades e valores (valor unitários * quantidade).</li>
-  <li>Incrementar e/ou decrementar a quantidade dos itens.</li>
-  <li>Cálculo automático do valor dos itens e da sacola de compras.</li>
-  <li>Deletar item(s).</li>
-  <li>Visualizar valor total da sacola.</li>
-  <li>Simular compras ao clicar no botão "Ir para o pagamanto".</li>
+  <li><strong>Adicionar item(s) à sacola</strong>: O usuário pode selecionar o(s) item(s) e adicioná-lo(s) à sacola de compras.
+  <li><strong>Alterar quantidade de itens</strong>: Dentro da sacola, é possível aumentar ou diminuir a quantidade de cada item.
+  <li><strong>Recalcular valores automaticamente</strong>: Sempre que a quantidade de um item é alterada, o valor individual e o total da sacola são atualizados em tempo real.
+  <li><strong>Mensagem ao finalizar a compra</strong>: Ao clicar no botão "<strong>Ir ao pagamento</strong>", um alerta é exibido informando o usuário.
+  <li><strong>Responsividade</strong>: O site possue responsividade para dispositivos pequenos, como celulares e tablets, e dispositivos maiores, como laptops e computadores.
 </ul>
 
-<h2>Como rodar o porjeto</h2>
+<h2>Demonstração das funcionalidades</h2>
+<div align="center">
+	<img src="./assets/img/demonstration.gif" alt="Imagem animada das funcionalidades do site" width="800px">
+</div>
 
+<h2>Como rodar o projeto</h2>
+<p>Não há necessiadade de instalar nenhuma depedência para rodar o projeto, apenas siga o passo-a-passo a seguir:</p>
 <ol>
-	<li>Clone o repositório:</li>
-		<ol type="A">
-			<li>Instale o Git (caso não tenha), clicando <a href="https://git-scm.com/">aqui</a>.</li>
-			<li>Abra o terminal:</li>
-				<ul type="disc">
-					<li>No Windows: Abra o <strong>Git Bash</strong> ou o <strong>Prompt de Comando</strong>.</li>
-					<li>No macOS ou Linux: Abra o <strong>Terminal</strong>.</li>
-				</ul>
-			<li>Navegue até o diretório onde deseja clonar o repositório com o comando <strong>cd</strong>.</li>
-			<li>No diretório escolhido digite o seguinte comando: <strong>git clone https://github.com/MatheusVenturaNellessen/chinese-restaurant-website.git</strong>.</li>
-			<li>Acesse o repositório com o comando <strong>cd</strong>.</li>
-		</ol>
-	<li>Por fim, abra o arquivo index.html em algum navegador.</li>
+	<li>Navegue até o diretório pretendido:
+	<pre><code>cd caminho/do/diretorio</code></pre>
+	<li>No diretório escolhido, clone o repositório:
+	<pre><code>git clone https://github.com/MatheusVenturaNellessen/chinese-restaurant-website.git</code></pre>
+	<li>Abra o arquivo <strong>index.html</strong> em seu navegador para visualizar o site.
 </ol>
 
 <h2>Licenciamento de imagens</h2>
-
-<p>As imagens utilizadas neste projeto são de terceiros e possuem direitos autorais protegidos. Elas foram utilizadas exclusivamente para fins pedagógicos e não têm finalidade comercial. Todos os créditos e direitos autorais pertencem aos seus respectivos proprietários.</p>
-
+<p>As imagens utilizadas neste projeto são de terceiros e possuem direitos autorais protegidos. Elas foram utilizadas exclusivamente para fins de aprendizado e não possuem finalidade comercial. Todos os créditos e direitos autorais pertencem aos seus respectivos proprietários.</p>
 <p>Caso alguma das imagens deva ser removida ou creditada de maneira específica, por favor, entre em contato.</p>
 
 <h2>Contribuições</h2>
-
-<p>Se você deseja contribuir com este projeto, sinta-se à vontade para abrir <strong>issues</strong> para discutir melhorias!</p>
+<p>Este projeto está aberto para contribuições através de issues. Caso você tenha encontrado um bug, queira sugerir uma melhoria ou tenha dúvidas sobre o funcionamento do projeto, por favor, siga as instruções abaixo:</p>
+<ol>
+    <li>Verifique se já existe uma issue da situação aberta. Se já existir, adicione seu comentário na issue existente;
+    <li>Caso não tenha sido aberta, crie uma issue nova.
+</ol>
