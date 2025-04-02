@@ -10,7 +10,7 @@
 </ul>
 
 <h2>Estrutura das pastas</h2>
-<pre>panelachinese-restaurant-website/
+<pre>chinese-restaurant-website/
 ├── assets/
 │   ├── css/				# Arquivos de estilo
 │   │   └── style.css
@@ -35,7 +35,7 @@
 
 <h2>Demonstração das funcionalidades</h2>
 <div align="center">
-	<img src="./assets/img/demonstration.gif" alt="Imagem animada das funcionalidades do site" width="800px">
+	<img src="./assets/img/demonstration.gif" alt="Imagem animada das funcionalidades do site" width="700px">
 </div>
 
 <h2>Como rodar o projeto</h2>
