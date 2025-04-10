@@ -1,0 +1,852 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Color palette */
+    --vermelho: #D72638;
+    --dourado: #FFD700;
+    --bege-suave: #F5E1C7;
+    --verde-jade: #1A936F;
+    --off-white: #ECEBE9;
+
+    /* Fonts */
+    --main-title: "Cormorant Garamond", serif;
+    --default-title: "Urbanist", sans-serif;
+    --default-font: "Roboto", sans-serif;
+    --money-font: "Orbitron", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--vermelho);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.600);
+    
+    padding: 50px;
+}
+
+header > div#logo-box > img {
+    height: 200px;
+    width: auto;
+}
+
+header > div#title-box > h1 {
+    font-family: var(--main-title);
+    font-variant: small-caps;
+    font-size: 4em;
+    color: var(--bege-suave);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.600);
+}
+
+header > div#title-box > p {
+    font-family: var(--main-title);
+    font-size: 2em;
+    color: var(--bege-suave);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.600);
+}
+
+html, body {
+    font-family: var(--default-font);
+
+    background-color: #EBEBE3;
+    background-image: url(../img/body-background.avif);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+    background-attachment: fixed;
+    
+}
+
+main h3 {
+    font-family: var(--default-title);
+    font-size: 1.5em;
+    font-weight: 600;
+
+    margin: 25px 0px;
+}
+
+main hr {
+    height: auto;
+    width: 85%;
+    
+    border: 1px solid #ffffff90;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.200);
+    
+    margin: auto;
+}
+
+main strong {
+    color: var(--verde-jade);
+}
+
+main em, abbr {
+    text-decoration: underline;
+    text-decoration-color: var(--verde-jade);
+    font-style: normal;
+    font-weight: 450;
+}
+
+main > section {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin: 150px;
+}
+
+main > section.default-sections > div.default-box {
+    background-color: #fff;
+    
+    height: auto;
+    min-width: 500px;
+    max-width: 700px;
+    
+    border: 5px solid var(--dourado);
+    border-radius: 24px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.400);
+    
+    padding: 35px;
+}
+
+main > section.default-sections h2 {
+    font-family: var(--default-title);
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    
+    margin: 10px 0px;
+}
+
+main > section.default-sections p {
+    font-family: var(--default-font);
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-align: justify;
+
+    margin: 20px 0px;
+}
+
+main > section#section-menu {
+    position: relative;
+
+    background-color: #fff;
+    border-radius: 24px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+    
+    height: auto;
+    max-width: 90%;
+
+    margin: 150px auto;
+    padding: 40px;
+}
+
+main > section#section-menu > h2 {
+    position: absolute;
+    top: -35px;
+    left: 4%;
+
+    font-family: var(--default-title);
+    font-size: 3em;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+}
+
+main > section#section-menu > div.menu-box {
+    background-color: var(--off-white);
+    border-radius: 24px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+
+    padding: 30px;
+}
+
+main > section#section-menu > div.menu-box > img {
+    height: auto;
+    width: 100%;
+
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+}
+
+main > section#section-menu > div.menu-box > p {
+    font-family: var(--default-font);
+    font-size: 1em;
+    line-height: 1.25em;
+    text-align: justify;
+}
+
+main > section#section-menu > div.menu-box > button.add-bag-box {
+    font-family: var(--money-font);
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    
+    
+    height: auto;
+    width: 100%;
+    margin: 30px 0px;
+    padding: 10px;
+    
+    background-color: var(--verde-jade);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+}
+
+main > section#section-menu > div.menu-box > button.add-bag-box:hover {
+    background-color: #3fc19a;
+    cursor: pointer;
+}
+
+main > section#section-menu > div.menu-box > button.add-bag-box:active {
+    background-color: var(--dourado);
+    color: #000;
+}
+ 
+main > section#section-bag {
+    display: block;
+    position: relative;
+
+    background-color: #fff;
+    border-radius: 24px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+    
+    height: auto;
+    max-width: 90%;
+
+    margin: 5vh auto;
+    padding: 40px;
+}
+
+main > section#section-bag > h2 {
+    position: absolute;
+    top: -35px;
+    left: 4%;
+
+    font-family: var(--default-title);
+    font-size: 3em;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+}
+
+main > section#section-bag > ul > li {
+    list-style-type: none;
+
+    font-size: 1.8em;
+    
+    padding-bottom: 20px;
+}
+
+main > section#section-bag > p {
+    display: inline;
+    
+    font-size: 1.8em;
+}
+
+main > section#section-bag > button {
+    background-color: var(--verde-jade);
+    
+    height: auto;
+    width: auto;
+
+    margin: 20px;
+    padding: 12px;
+
+    font-size: 1.5em;
+    color: #fff;
+
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+
+}
+
+main > section#section-bag > button:hover {
+    background-color: #3fc19a;
+    cursor: pointer;
+}
+
+main > section#section-bag > button:active {
+    background-color: var(--dourado);
+    color: #000;
+}
+
+main > section#section-bag > ul > li > button.to-add-button, button.to-decrease-button {
+    background-color: var(--bege-suave);
+
+    font-size: 0.6em;
+
+    margin-left: 10px;
+    padding: 10px;
+
+    border: none;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+}
+
+main > section#section-bag > ul > li > button.to-add-button:hover, button.to-decrease-button:hover {
+    background-color: var(--off-white);
+}
+
+main > section#section-bag > ul > li > button.to-add-button:active, button.to-decrease-button:active {
+    background-color: var(--dourado);
+}
+
+main > section#section-bag > ul > li > button.delete-button {
+    background-color: var(--bege-suave);
+
+    font-size: 0.6em;
+    color: var(--bege-suave);
+
+    margin-left: 10px;
+    padding: 10px;
+
+    border: none;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+}
+
+main > section#section-bag > ul > li > button.delete-button:hover {
+    background-color: var(--off-white);
+}
+
+main > section#section-bag > ul > li > button.delete-button:active {
+    background-color: var(--dourado);
+}
+
+main > section#section-about > div#about-image-box {
+    background-image: url(../img/section-about-background.png);
+    background-repeat: no-repeat;
+    background-position: top top;
+    background-size: contain;
+}
+
+main > section#section-about > div#about-image-box > img {
+    height: 700px;
+    width: auto;
+    
+    filter: drop-shadow(-2px 2px 2px rgba(0, 0, 0, 0.600));
+}
+
+main > section#section-about > div#about-description-box > img {
+    display: none;
+}
+
+main > section#section-informations > div#contact-box > ul > li {
+    list-style-type: none;
+    font-size: 1.5em;
+
+    margin: 20px 0px;
+}
+
+main > section#section-informations > div#contact-box > ul > li#phone:hover::after {
+    content: ": (88) 88888-8888";
+}
+
+main > section#section-informations > div#contact-box > ul > li#email:hover::after {
+    content: ": email@email.com";
+}
+
+main > section#section-informations > div#contact-box > ul > li > a {
+    color: #000;
+    text-decoration: none;
+}
+
+main > section#section-informations > div#contact-box > ul#social-media-ul > li > a > img {
+    height: 5vw;
+    max-height: 80px;
+    width: auto;
+}
+
+main > section#section-informations > div#contact-box > ul#social-media-ul {
+    display: inline-flex;
+    gap: 20%;
+    width: 100%;
+    justify-content: center;
+}
+
+main > section#section-informations > div#contact-box > ul#social-media-ul > li#instagram-logo > a > img:hover {
+    background-image: linear-gradient(145deg, #F58529, #FEDA77, #DD2A7B, #8134AF , #515BD4);
+    border-radius: 6px;
+}
+
+main > section#section-informations > div#contact-box > ul#social-media-ul > li#instagram-logo {
+    position: relative;
+}
+
+main > section#section-informations > div#contact-box > ul#social-media-ul > li#instagram-logo > a:hover::after {
+    content: "Instagram";
+    font-size: 1em;
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+main > section#section-informations > div#contact-box > ul#social-media-ul > li#facebook-logo > a > img:hover {
+    background-color: #1877F2;
+    border-radius: 6px;
+}
+
+main > section#section-informations > div#contact-box > ul#social-media-ul > li#facebook-logo {
+    position: relative;
+}
+
+main > section#section-informations > div#contact-box > ul#social-media-ul > li#facebook-logo > a:hover::after {
+    content: "Facebook";
+    font-size: 1em;
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+main > section#section-informations > div#contact-box > ul#social-media-ul > li#tiktok-logo > a > img:hover {
+    background: radial-gradient(circle, #fff 20%, #000);
+    border-radius: 25%;
+}
+
+main > section#section-informations > div#contact-box > ul#social-media-ul > li#tiktok-logo {
+    position: relative;
+}
+
+main > section#section-informations > div#contact-box > ul#social-media-ul > li#tiktok-logo > a:hover::after {
+    content: "TikTok";
+    font-size: 1em;
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+main > section#section-informations > div#localitation-box > fieldset {
+    border: 2px solid var(--verde-jade);
+    border-radius: 15px;
+}
+
+main > section#section-informations > div#localitation-box > fieldset > legend {
+    font-size: 1.25em;
+    font-weight: 500;
+    
+    margin-left: 5%;
+    padding: 0px 10px;
+}
+
+main > section#section-informations > div#localitation-box > fieldset > iframe {
+    height: auto*2;
+    width: 100%;
+
+    border-radius: 15px;
+}
+
+footer {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: var(--dourado);
+    box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.300);
+    
+    padding: 30px;
+}
+
+footer > section#footer-section-flex {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer > section > div {
+    height: auto;
+    width: auto;
+}
+
+footer > section > div > h2 {
+    font-family: var(--default-title);
+    font-size: 1.5em;
+    font-weight: 600;
+
+    margin: 20px 0px;
+}
+
+footer > section > div > ul > li {
+    list-style-type: none;
+
+    font-size: 1.25em;
+
+    margin: 15px 0px;
+}
+
+footer > section > div > ul > li > em {
+    font-style: normal;
+    font-weight: 500;
+}
+
+footer > div > ul > li > a {
+    color: #0000EE;
+}
+
+footer hr {
+    height: 40vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 1px solid #ffffff40;
+}
+
+/* Responsiveness for smaller devices */
+@media (max-width: 991px) {
+    header {
+        padding: 10%;
+    }
+
+    header > div#logo-box > img {
+        height: 15vw;
+        width: auto;
+    }
+        
+    header > div#title-box > h1 {
+        font-size: 8vw;
+    }
+    
+    header > div#title-box > p {
+        font-size: 5vw;
+    }
+    
+    main {
+        padding: 0vh 3vw;
+    }
+
+    main > section {
+        display: block;
+    }
+
+    main > section.default-sections > div.default-box {
+        min-width: 0;
+        width: 100%;
+        
+        padding: 3vh 5vw;
+
+        border: 2px solid var(--dourado);
+    }
+
+    main > section.default-sections h2 {
+        font-size: 6vw;
+        
+        margin: 2vh 0vw;
+    }
+
+    main h3 {
+        font-size: 5vw;
+
+        margin: 2vh 0vw;
+    }
+
+    main > section.default-sections p {
+        font-size: 4vw;
+
+        margin: 2vh 0vw;
+    }
+
+    main > section#section-menu {
+        width: 100%;
+        max-width: 700px;
+        
+        margin: 10% auto 5% auto;
+        padding: 5%;
+    }
+
+    main > section#section-menu > h2 {
+        top: -30px;
+
+        font-size: 2.6em;
+    }
+
+    main > section#section-menu > div.menu-box {
+        width: 100%;
+        max-width: 100%;
+        padding: 4%;
+    }
+
+    main > section#section-menu > div.custom-box-for-small-device {
+        margin-top: 5vh;
+    }
+
+    main > section#section-menu > div.menu-box > p {
+        font-size: 4vw;
+    }
+
+    main > section#section-menu > div.menu-box > div.price-box {
+        font-size: 6vw;
+
+        margin: 4vh 0vw;
+        padding: 3%;
+    }
+
+    main > section#section-bag {
+        height: auto;
+        width: 100%;
+        max-width: 700px;
+    
+        padding: 4%;
+    }
+
+    main > section#section-bag > h2 {
+        top: -30px;
+
+        font-size: 2.6em;
+    }
+    
+     main > section#section-bag > ul > li {    
+        font-size: 3.8vw;
+
+        padding: 0.5vh 0vw;
+    }
+    
+    main > section#section-bag > p {
+        font-size: 4vw;
+    }
+
+    main > section#section-bag > button {
+        margin: 20px;
+        padding: 3%;
+    
+        font-size: 3.3vw;
+
+        margin: 3%;
+    }
+    
+    main > section#section-bag > ul > li > button { 
+        margin: 0vh 2vw;
+        padding: 2%;
+    
+        border: none;
+        border-radius: 50%;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+    }
+    
+    main > section#section-bag > ul > li > button.to-add-button {
+        font-size: 2.7vw;
+
+        margin: 1vw;
+        padding: 1.5%;
+    }
+
+    main > section#section-bag > ul > li > button.to-decrease-button {
+        font-size: 2.7vw;
+
+        margin: 1vw;
+        padding: 1.5%;
+    }
+    
+    main > section#section-bag > ul > li > button.delete-button {
+        font-size: 2.7vw;
+
+        margin: 1vw;
+        padding: 1.5%;
+    }
+
+    main > section#section-about {
+        margin: 15% 0%;
+    }
+
+    main > section#section-about > div#about-image-box {
+        display: none;
+    }
+
+    main > section#section-about > div#about-description-box {
+        text-align: center;
+        margin: auto;
+    }
+
+    main > section#section-about > div#about-description-box > img {
+        display: block;
+        
+        max-height: auto;
+        max-width: 100%;
+
+        border-radius: 15px;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+
+        margin: 1vh auto;
+    }
+    
+    main > section#section-informations {
+        margin: 5% 0% 15% 0%;
+    }
+
+    main > section#section-informations > div.informations-box {
+        margin: 5vh auto 0vh auto;
+    }
+
+    main > section#section-informations > div#contact-box > ul > li {
+        list-style-type: none;
+
+        font-size: 4.5vw;
+
+        margin: 2vh 0vw;
+    }
+
+    main > section#section-informations > div#contact-box > h3 {
+        font-size: 4.5vw;
+        margin: 3vh 0vw;
+    }
+
+    main > section#section-informations > div#contact-box > ul > li#phone:active::after {
+        content: ": (88) 88888-8888";
+    }
+
+    main > section#section-informations > div#contact-box > ul > li#email:active::after {
+        content: ": email@email.com";
+    }
+
+    main > section#section-informations > div#contact-box > ul#social-media-ul {
+        display: inline-flex;
+        gap: 13vw;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 2vh;
+    }
+
+    main > section#section-informations > div#contact-box > ul#social-media-ul > li > a > img {
+        height: auto;
+        width: 12vw;
+        max-width: 70px;
+    }
+
+    main > section#section-informations > div#contact-box > ul#social-media-ul > li#instagram-logo > a > img {
+        background-image: linear-gradient(145deg, #F58529, #FEDA77, #DD2A7B, #8134AF , #515BD4);
+        border-radius: 5px;
+    }
+
+    main > section#section-informations > div#contact-box > ul#social-media-ul > li#facebook-logo > a > img {
+        background-color: #1877F2;
+        border-radius: 5px;
+    }
+
+    main > section#section-informations > div#contact-box > ul#social-media-ul > li#tiktok-logo > a > img {
+        background: radial-gradient(circle, #fff 20%, #000);
+        border-radius: 25%;
+    }
+
+    main > section#section-informations > div#contact-box > ul#social-media-ul > li#instagram-logo > a::after {
+        content: "Instagram";
+        font-size: 4vw;
+
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    main > section#section-informations > div#contact-box > ul#social-media-ul > li#facebook-logo > a::after {
+        content: "Facebook";
+        font-size: 4vw;
+
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    main > section#section-informations > div#contact-box > ul#social-media-ul > li#tiktok-logo > a::after {
+        content: "TikTok";
+        font-size: 4vw;
+
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    main > section#section-informations > div#contact-box > ul#social-media-ul > li#instagram-logo > a:hover::after {
+        font-size: 4vw;
+    }
+
+    main > section#section-informations > div#contact-box > ul#social-media-ul > li#facebook-logo > a:hover::after {
+        font-size: 4vw;
+    }
+    
+    main > section#section-informations > div#contact-box > ul#social-media-ul > li#tiktok-logo > a:hover::after {
+        font-size: 4vw;
+    }
+
+    main > section#section-informations > div#localitation-box > fieldset {
+        border: 1px solid var(--verde-jade);
+    }
+
+    main > section#section-informations > div#localitation-box > fieldset > legend {
+        font-size: 3vw;
+    }
+
+    main > section#section-informations > div#localitation-box > fieldset > iframe {
+        max-height: 50vh;
+        max-width: auto;
+    }
+    
+    footer {
+        display: block;
+
+        padding: 0;
+    }
+
+    footer > section#footer-section-flex {
+        display: flex;
+        gap: 5%;
+        justify-items: center;
+
+        padding: 5%;
+    }
+
+    footer > section#footer-section-block > div > ul > li {
+        font-size: 2.6vw;
+
+        text-align: center;
+
+        margin: 0;
+        padding-bottom: 2%;
+    }
+
+    footer > section > div > h2 {
+        font-size: 4vw;
+
+        margin: 2vh 0vw;
+    }
+
+    footer > section > div > h2#h2-for-large-device {
+        display: none;
+    }
+    
+    footer > section  div > ul > li {
+        font-size: 3vw;
+
+        margin: 2vh 0vw;
+    }
+
+    footer hr {
+        max-height: auto;
+        margin: auto;
+    }
+
+    footer hr#hr-for-large-device {
+        display: none;
+    }
+}
