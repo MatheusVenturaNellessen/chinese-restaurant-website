@@ -1,6 +1,8 @@
 <h1>Panela de Bambu Website</h1>
 <p>Esse projeto de um site para o restaurante de culinária chinesa fictício Panela de Bambu foi desenvolvido apenas para fins de aprendizado, sem qualquer uso comercial. Em seu desenvolvimento foram utilizadas as linguagens HTML, CSS e JavaScript fim de explorar conceitos de desenvolvimento web, em especial o front-end.</p>
 
+<hr>
+
 <h2>Tecnologias utilizadas</h2>
 <ul>
 	<li>HTML5
@@ -9,12 +11,14 @@
 	<li>Visual Studio Code v1.99.2
 </ul>
 
+<hr>
+
 <h2>Estrutura do projeto</h2>
 <pre>
 CHINESE-RESTAURANT-WEBSITE/
 ├── assets/
 │   ├── css/
-│   │   └── style.css				# Arquivo de estilo do site
+│   │   └── style.css					# Arquivo de estilo do site
 │   │
 │   ├── img/						# Imagens utilizadas no projeto
 │   │   └── [imagens]
@@ -31,13 +35,13 @@ CHINESE-RESTAURANT-WEBSITE/
 <h2>Funcionalidades</h2>
 <ul>
   <li><strong>Adicionar item(s) à sacola</strong>: O usuário pode selecionar o(s) item(s) e adicioná-lo(s) à sacola de compras.
-  <br>
+  <br><br>
   <li><strong>Alterar quantidade de itens</strong>: Dentro da sacola, é possível aumentar ou diminuir a quantidade de cada item.
-  <br>
+  <br><br>
   <li><strong>Recalcular valores automaticamente</strong>: Sempre que a quantidade de um item é alterada, o valor individual e o total da sacola são atualizados em tempo real.
-  <br>
+  <br><br>
   <li><strong>Mensagem ao finalizar a compra</strong>: Ao clicar no botão "<strong>Ir ao pagamento</strong>", um alerta é exibido informando o usuário.
-  <br>
+  <br><br>
   <li><strong>Responsividade</strong>: O site possue responsividade para dispositivos pequenos, como celulares e tablets, e dispositivos maiores, como laptops e computadores.
 </ul>
 
